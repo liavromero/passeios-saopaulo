@@ -13,7 +13,7 @@
   <header class="topo-menu">
     <h1>Guia de Passeios</h1>
 
-    <div class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')">
+    <div class="menu-btn">
       <div></div><div></div><div></div>
     </div>
 
@@ -95,6 +95,28 @@
     </section>
 
   </main>
+<script>
+  const nav = document.querySelector("nav");
+  const menuBtn = document.querySelector(".menu-btn");
+
+  // abre e fecha o menu quando clica no botão
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // evita fechar instantaneamente
+    nav.classList.toggle("open");
+  });
+
+  // fecha ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) {
+      nav.classList.remove("open");
+    }
+  });
+
+  // fecha ao clicar em um link
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => nav.classList.remove("open"));
+  });
+</script>
 
 </body>
 </html>

@@ -251,6 +251,19 @@ nav a:hover {
 .menu a:hover {
   border-bottom: 2px solid #e50000;
 }
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+.menu-btn div {
+  width: 28px;
+  height: 3px;
+  background: #111;
+}
 
 /* ===== RESPONSIVO HEADER ===== */
 @media (max-width: 768px) {
@@ -289,5 +302,36 @@ nav a:hover {
 
   #calendar {
     grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media (max-width: 700px) {
+
+  /* botão aparece */
+  .menu-btn {
+    display: flex;
+  }
+
+  /* menu vira dropdown */
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border: 3px solid #111;
+    padding: 20px;
+    width: 180px;
+    z-index: 2000;
+  }
+
+  /* quando aberto */
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px 0;
+    font-size: 1rem;
   }
 }

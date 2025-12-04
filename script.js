@@ -59,3 +59,25 @@ function addPasseio(dia, nome, foto, link, descricao) {
 // Exemplo de passeios
 addPasseio(14, "MASP", "imgs/maspcapa.jpg", "masp.html", "Museu de Arte de São Paulo, com exposições incríveis de arte moderna e contemporânea.");
 addPasseio(15, "Parque Ibirapuera", "imgs/ibirapuera.jpg", "ibirapuera.html", "Ótimo lugar para caminhadas e relaxar ao ar livre.");
+
+
+  const nav = document.querySelector("#menu");
+  const menuBtn = document.querySelector(".menu-btn");
+
+  // abre e fecha menu
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  // fecha ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+      nav.classList.remove("open");
+    }
+  });
+
+  // fecha ao clicar em link
+  document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", () => nav.classList.remove("open"));
+  });
