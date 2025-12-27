@@ -2,8 +2,8 @@
 const calendar = document.getElementById("calendar");
 const lista = document.getElementById("lista-passeios");
 
-const start = 12;
-const end = 27;
+const start = 14;
+const end = 31;
 let passeios = {};
 
 // ==== Calendar configuration ====
@@ -97,6 +97,9 @@ addPasseio(17, "Estação da Luz + Jardim da Luz", "imgs/luzcapa.jpg", "luz.html
 addPasseio(19, "Parque Ibirapuera", "https://upload.wikimedia.org/wikipedia/commons/1/14/Parque_Ibirapuera_SP_lago.jpg", "https://pt.wikipedia.org/wiki/Parque_Ibirapuera", "Caminhada e relax no Parque Ibirapuera — natureza, pavilhões e áreas livres para descanso.");
 addPasseio(19, "MAM / Museu Afro Brasil (Ibirapuera)", "https://upload.wikimedia.org/wikipedia/commons/2/2d/MAM_São_Paulo_Prédio.jpg", "https://pt.wikipedia.org/wiki/MAM_(São_Paulo)", "Visita a museu de arte moderna ou ao Museu Afro Brasil dentro do complexo do Ibirapuera — para quem quiser parte cultural + paisagem do parque.");
 
+// 21/01/2026 — Parque Ibirapuera + MAM/ Museu Afro Brasil
+addPasseio(19, "Parque Ibirapuera", "https://upload.wikimedia.org/wikipedia/commons/1/14/Parque_Ibirapuera_SP_lago.jpg", "https://pt.wikipedia.org/wiki/Parque_Ibirapuera", "Caminhada e relax no Parque Ibirapuera — natureza, pavilhões e áreas livres para descanso.");
+addPasseio(19, "MAM / Museu Afro Brasil (Ibirapuera)", "https://upload.wikimedia.org/wikipedia/commons/2/2d/MAM_São_Paulo_Prédio.jpg", "https://pt.wikipedia.org/wiki/MAM_(São_Paulo)", "Visita a museu de arte moderna ou ao Museu Afro Brasil dentro do complexo do Ibirapuera — para quem quiser parte cultural + paisagem do parque.");
 // ... keep all other existing addPasseio calls the same ...
 
 // ==== Menu toggle (existing) ====
