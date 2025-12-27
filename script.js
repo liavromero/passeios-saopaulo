@@ -85,22 +85,112 @@ function addPasseio(dia, nome, foto, link, descricao) {
     passeios[dia].push({ nome, foto, link, descricao });
 }
 
-// ==== Example passeios (keep all her existing entries) ====
-// 16/01/2026 — MASP
-addPasseio(16, "MASP", "imgs/maspcapa.jpg", "masp.html", "Museu de Arte de São Paulo — arquitetura icônica na Avenida Paulista; exposições de arte moderna e contemporânea. Visita no horário de 18h–21h, gratuita.");
+// ==== PASSEIOS ORGANIZADOS — JANEIRO 2026 ====
 
-// 17/01/2026 — Pinacoteca + Estação da Luz / Jardim da Luz
-addPasseio(17, "Pinacoteca do Estado de São Paulo", "imgs/pinacotecacapa.png", "pinacoteca.html", "Visita à Pinacoteca — ótimo acervo de arte brasileira. Entrada gratuita.");
-addPasseio(17, "Estação da Luz + Jardim da Luz", "imgs/luzcapa.jpg", "luz.html", "Passeio pela histórica Estação da Luz e área do Jardim da Luz próxima à Pinacoteca — bom para fotos e atmosfera do centro.");
+// 15/01 — Parque Ibirapuera + MAC USP
+addPasseio(
+  15,
+  "Parque Ibirapuera",
+  "imgs/ibirapuera.jpg",
+  "https://parqueibirapuera.org/",
+  "Caminhada, descanso e contato com a natureza no principal parque de São Paulo."
+);
 
-// 19/01/2026 — Parque Ibirapuera + MAM/ Museu Afro Brasil
-addPasseio(19, "Parque Ibirapuera", "https://upload.wikimedia.org/wikipedia/commons/1/14/Parque_Ibirapuera_SP_lago.jpg", "https://pt.wikipedia.org/wiki/Parque_Ibirapuera", "Caminhada e relax no Parque Ibirapuera — natureza, pavilhões e áreas livres para descanso.");
-addPasseio(19, "MAM / Museu Afro Brasil (Ibirapuera)", "https://upload.wikimedia.org/wikipedia/commons/2/2d/MAM_São_Paulo_Prédio.jpg", "https://pt.wikipedia.org/wiki/MAM_(São_Paulo)", "Visita a museu de arte moderna ou ao Museu Afro Brasil dentro do complexo do Ibirapuera — para quem quiser parte cultural + paisagem do parque.");
+addPasseio(
+  15,
+  "MAC USP",
+  "imgs/mac usp.jpg",
+  "https://www.mac.usp.br/",
+  "Museu de Arte Contemporânea da USP com vista panorâmica da cidade."
+);
 
-// 21/01/2026 — Parque Ibirapuera + MAM/ Museu Afro Brasil
-addPasseio(19, "Parque Ibirapuera", "https://upload.wikimedia.org/wikipedia/commons/1/14/Parque_Ibirapuera_SP_lago.jpg", "https://pt.wikipedia.org/wiki/Parque_Ibirapuera", "Caminhada e relax no Parque Ibirapuera — natureza, pavilhões e áreas livres para descanso.");
-addPasseio(19, "MAM / Museu Afro Brasil (Ibirapuera)", "https://upload.wikimedia.org/wikipedia/commons/2/2d/MAM_São_Paulo_Prédio.jpg", "https://pt.wikipedia.org/wiki/MAM_(São_Paulo)", "Visita a museu de arte moderna ou ao Museu Afro Brasil dentro do complexo do Ibirapuera — para quem quiser parte cultural + paisagem do parque.");
-// ... keep all other existing addPasseio calls the same ...
+// 17/01 — Edifício Altino Arantes (Farol Santander)
+addPasseio(
+  17,
+  "Edifício Altino Arantes (Farol Santander)",
+  "imgs/altino.jpg",
+  "https://farolsantander.com.br/",
+  "Prédio histórico com vários andares, exposições, experiências culturais e mirante."
+);
+
+// 19/01 — Beco do Batman
+addPasseio(
+  19,
+  "Beco do Batman",
+  "imgs/beco.jpg",
+  "https://www.google.com/maps/place/Beco+do+Batman/",
+  "Galeria de arte urbana a céu aberto na Vila Madalena, ideal para fotos e caminhada."
+);
+
+// 20/01 — MIS + MASP (terça-feira gratuita)
+addPasseio(
+  20,
+  "MIS – Museu da Imagem e do Som",
+  "imgs/mis.jpg",
+  "https://mis-sp.org.br/",
+  "Museu com exposições audiovisuais e experiências interativas. Entrada gratuita às terças."
+);
+
+addPasseio(
+  20,
+  "MASP",
+  "imgs/maspcapa.jpg",
+  "https://masp.org.br/",
+  "Museu de Arte de São Paulo, ícone da Avenida Paulista. Entrada gratuita às terças."
+);
+
+// 22/01 — Museu Catavento
+addPasseio(
+  22,
+  "Museu Catavento",
+  "imgs/catavento.jpg",
+  "https://museucatavento.org.br/",
+  "Museu de ciência interativo, com experiências práticas e educativas."
+);
+
+// 24/01 — CCBB
+addPasseio(
+  24,
+  "CCBB – Centro Cultural Banco do Brasil",
+  "imgs/ccbb.jpg",
+  "https://www.bb.com.br/site/ccbb/",
+  "Centro cultural com exposições, cinema e atividades gratuitas."
+);
+
+// 26/01 — Museu da Língua Portuguesa
+addPasseio(
+  26,
+  "Museu da Língua Portuguesa",
+  "imgs/portuguesa.jpg",
+  "https://www.museudalinguaportuguesa.org.br/",
+  "Museu interativo e imersivo sobre a língua portuguesa, com projeções e sons."
+);
+
+// 28/01 — Parque Burle Marx
+addPasseio(
+  28,
+  "Parque Burle Marx",
+  "imgs/burlemarx.jpg",
+  "https://www.saopaulo.sp.gov.br/cidade/parques/parque-burle-marx/",
+  "Parque com jardins projetados por Burle Marx, trilhas e áreas verdes amplas."
+);
+
+// 30/01 — Parque Trianon + Mirante SESC Paulista
+addPasseio(
+  30,
+  "Parque Trianon",
+  "imgs/trianon.jpg",
+  "https://www.saopaulo.sp.gov.br/cidade/parques/parque-tenente-siqueira-campos-trianon/",
+  "Parque urbano na Avenida Paulista, ideal para uma pausa verde."
+);
+
+addPasseio(
+  30,
+  "Mirante do SESC Paulista",
+  "imgs/sesc.jpg",
+  "https://www.sescsp.org.br/unidades/paulista/",
+  "Mirante com vista panorâmica da cidade, ótimo para ver o pôr do sol."
+);
 
 // ==== Menu toggle (existing) ====
 const nav = document.querySelector("#menu");
